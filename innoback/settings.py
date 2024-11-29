@@ -165,6 +165,15 @@ CSRF_TRUSTED_ORIGINS = [
     "https://innocomm.vercel.app/",
     os.environ.get("ALLOWED_ORIGIN_DATA")]
 
+CORS_ALLOW_METHODS = (
+    "DELETE",
+    "GET",
+    "OPTIONS",
+    "PATCH",
+    "POST",
+    "PUT",
+)
+
 CORS_ALLOW_CREDENTIALS = True
 
 SIMPLE_JWT = {
