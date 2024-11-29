@@ -28,9 +28,7 @@ SECRET_KEY = 'django-insecure-^$pxcje-etaxsua*mhx%2#06$ub8=s5*p0xn@s2p9_4%@(l+&0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'True') == "True"
 
-ALLOWED_HOSTS = [
-    os.environ.get("ALLOWED_HOST", "")
-]
+ALLOWED_HOSTS = ["innocomm.onrender.com"]
 
 
 # Application definition
@@ -144,25 +142,20 @@ USE_TZ = True
 
 CORS_ALLOWED_ORIGINS = [
     "https://innoadmin.vercel.app",
-    "https://innoadmin.vercel.app/"
     "https://innocomm.vercel.app",
-    "https://innocomm.vercel.app/",
+    "http://192.168.29.246:3000",
     os.environ.get("ALLOWED_ORIGIN_DATA")
 
 ]
 CORS_ORIGIN_WHITELIST = [
     "https://innoadmin.vercel.app",
-    "https://innoadmin.vercel.app/"
     "https://innocomm.vercel.app",
-    "https://innocomm.vercel.app/",
     os.environ.get("ALLOWED_ORIGIN_DATA"),
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     "https://innoadmin.vercel.app",
-    "https://innoadmin.vercel.app/"
     "https://innocomm.vercel.app",
-    "https://innocomm.vercel.app/",
     os.environ.get("ALLOWED_ORIGIN_DATA")]
 
 CORS_ALLOW_METHODS = (
